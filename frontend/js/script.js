@@ -70,11 +70,11 @@ const createSelect = (value) => {
   const select = createElement("select", "", options);
   
   select.value = value;
-  /*select.style = `
+  select.style = `
   background-color: ${
   value === 'pendente' ? '#e76f51' : 
   value === 'em andamento' ? '#e9c46a' : 
-  value === 'concluida' ? '#2a9d8f' : 'white'}`;*/
+  value === 'concluida' ? '#2a9d8f' : 'white'}`;
 
   return select;
 };

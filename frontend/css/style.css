@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
@@ -93,7 +94,8 @@ tr:nth-child(even) {
 }
 
 select {
-  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  color: #f5f5f5;
   width: 100%;
   border: none;
   padding: 10px;
@@ -167,7 +169,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   position: relative;
   -webkit-box-reflect: below -50px linear-gradient(transparent, rgba(0,0,0,.2));
-  font-size: 60px;
+  font-size: 3.2rem;
 }
 
 .waviy span {
