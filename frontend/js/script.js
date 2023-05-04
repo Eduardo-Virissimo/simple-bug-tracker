@@ -61,14 +61,20 @@ const createElement = (tag, innerText = "", innerHTML = "") => {
 };
 
 const createSelect = (value) => {
+  
   const options = `
   <option value="pendente">pendente</option>
   <option value="em andamento">em andamento</option>
   <option value="concluida">concluída</option>`;
 
   const select = createElement("select", "", options);
-
+  
   select.value = value;
+  /*select.style = `
+  background-color: ${
+  value === 'pendente' ? '#e76f51' : 
+  value === 'em andamento' ? '#e9c46a' : 
+  value === 'concluida' ? '#2a9d8f' : 'white'}`;*/
 
   return select;
 };
